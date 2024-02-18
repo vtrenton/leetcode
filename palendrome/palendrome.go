@@ -6,6 +6,8 @@ func main() {
 	input := 10
 	if ispalendrome(input) {
 		fmt.Printf("%d is a palendrome!\n", input)
+	} else {
+		fmt.Printf("%d is NOT a palendrome.\n", input)
 	}
 }
 
@@ -34,7 +36,7 @@ func ispalendrome(input int) bool {
 	}
 
 	split := (length + 2 - 1) / 2
-	for i := 0; i < split; i++ {
+	for i := range split {
 		if myslice[i] != myslice[length-1-i] {
 			return false
 		}
