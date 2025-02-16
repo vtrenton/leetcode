@@ -26,15 +26,15 @@ func main() {
 
 	//fmt.Printf("sanity check: input = %d", input)
 	//input := 1001
-	if ispalendrome(input) {
-		fmt.Printf("%d is a palendrome!\n", input)
+	if ispalindrome(input) {
+		fmt.Printf("%d is a palindrome!\n", input)
 	} else {
-		fmt.Printf("%d is NOT a palendrome.\n", input)
+		fmt.Printf("%d is NOT a palindrome.\n", input)
 	}
 }
 
 // no need to convert to string :)
-func ispalendrome(input int64) bool {
+func ispalindrome(input int64) bool {
 	var myslice []int64
 
 	if input < 0 {
